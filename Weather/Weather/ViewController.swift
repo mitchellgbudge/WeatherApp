@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    
+    private var viewModel = WeatherViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.getWeatherData { [weak self] weatherData in
+            self?.temperatureLabel.text = weatherData.temperature
+            self?.speedLabel.text = weatherData.wind
+        }
     }
 
 

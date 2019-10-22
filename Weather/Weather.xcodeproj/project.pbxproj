@@ -15,6 +15,7 @@
 		3D1C35DB235F7E4500A118C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C35D9235F7E4500A118C8 /* LaunchScreen.storyboard */; };
 		3D1C35E4235F7F0900A118C8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1C35E3235F7F0900A118C8 /* Kingfisher */; };
 		3D1C35E7235F7FE200A118C8 /* TartuWeatherProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1C35E6235F7FE200A118C8 /* TartuWeatherProvider */; };
+		3D1C35E9235F80AE00A118C8 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C35E8235F80AE00A118C8 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3D1C35D7235F7E4500A118C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D1C35DA235F7E4500A118C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D1C35DC235F7E4500A118C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1C35E8235F80AE00A118C8 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3D1C35CE235F7E4100A118C8 /* AppDelegate.swift */,
 				3D1C35D0235F7E4100A118C8 /* SceneDelegate.swift */,
 				3D1C35D2235F7E4100A118C8 /* ViewController.swift */,
+				3D1C35E8235F80AE00A118C8 /* WeatherViewModel.swift */,
 				3D1C35D4235F7E4100A118C8 /* Main.storyboard */,
 				3D1C35D7235F7E4500A118C8 /* Assets.xcassets */,
 				3D1C35D9235F7E4500A118C8 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1C35D3235F7E4100A118C8 /* ViewController.swift in Sources */,
+				3D1C35E9235F80AE00A118C8 /* WeatherViewModel.swift in Sources */,
 				3D1C35CF235F7E4100A118C8 /* AppDelegate.swift in Sources */,
 				3D1C35D1235F7E4100A118C8 /* SceneDelegate.swift in Sources */,
 			);

@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var liveImage: UIImageView!
     
     private var viewModel = WeatherViewModel()
     
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
         viewModel.getWeatherData { [weak self] weatherData in
             self?.temperatureLabel.text = weatherData.temperature
             self?.speedLabel.text = weatherData.wind
+            
+            let imageURL = URL(string: weatherData.liveImageURL)!
+            self?.liveImage.kf.setImage(with: imageURL, options: [.forceRefresh])
         }
     }
 

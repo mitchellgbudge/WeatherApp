@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		3D1C35D6235F7E4100A118C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C35D4235F7E4100A118C8 /* Main.storyboard */; };
 		3D1C35D8235F7E4500A118C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C35D7235F7E4500A118C8 /* Assets.xcassets */; };
 		3D1C35DB235F7E4500A118C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C35D9235F7E4500A118C8 /* LaunchScreen.storyboard */; };
+		3D1C35E4235F7F0900A118C8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1C35E3235F7F0900A118C8 /* Kingfisher */; };
+		3D1C35E7235F7FE200A118C8 /* TartuWeatherProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1C35E6235F7FE200A118C8 /* TartuWeatherProvider */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1C35E4235F7F0900A118C8 /* Kingfisher in Frameworks */,
+				3D1C35E7235F7FE200A118C8 /* TartuWeatherProvider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				3D1C35E3235F7F0900A118C8 /* Kingfisher */,
+				3D1C35E6235F7FE200A118C8 /* TartuWeatherProvider */,
+			);
 			productName = Weather;
 			productReference = 3D1C35CB235F7E4100A118C8 /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 3D1C35C2235F7E4100A118C8;
+			packageReferences = (
+				3D1C35E2235F7F0800A118C8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				3D1C35E5235F7FE200A118C8 /* XCRemoteSwiftPackageReference "TartuWeatherProvider" */,
+			);
 			productRefGroup = 3D1C35CC235F7E4100A118C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +350,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D1C35E2235F7F0800A118C8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.3;
+			};
+		};
+		3D1C35E5235F7FE200A118C8 /* XCRemoteSwiftPackageReference "TartuWeatherProvider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fassko/TartuWeatherProvider";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D1C35E3235F7F0900A118C8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D1C35E2235F7F0800A118C8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		3D1C35E6235F7FE200A118C8 /* TartuWeatherProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D1C35E5235F7FE200A118C8 /* XCRemoteSwiftPackageReference "TartuWeatherProvider" */;
+			productName = TartuWeatherProvider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D1C35C3235F7E4100A118C8 /* Project object */;
 }
